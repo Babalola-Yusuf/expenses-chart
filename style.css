@@ -1,0 +1,98 @@
+root{
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+body {
+    background-color: hsl(27, 66%, 92%);
+    height: 100vh;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    
+}
+
+#flexContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    width: 100vw;
+}
+.container{
+    width: 500px;
+    height: 60%;
+}
+
+.top-bar{
+    background-color: hsl(10, 79%, 65%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 1rem;
+    color: white;
+}
+
+img{
+    height: 50px;
+}
+
+.card{
+    background-color: white;
+    padding: 30px;
+    height: 400px;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+.graph{
+    height: 250px;
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.align-right{
+    text-align: right;
+}
+ .thick{
+     font-weight: 700;
+ }
+ .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+@media(max-width: 375px){
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    #flexContainer{
+        padding: 20px;
+        padding-right: 60px;
+       
+    }
+    .container{
+    height: 80%;
+    max-width: 100%; 
+}
+    .top-bar{
+    padding: 20px;
+}
+    .card{
+    padding: 20px;
+}
+    .graph{
+    height: 200px;
+}
+}

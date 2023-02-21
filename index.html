@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js">
+   </script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="flexContainer">
+        <div class="container">
+        <div class="top-bar">
+            <div class="balance-group">
+                <p>  My balance</p>
+            <h1 class="bal-amount">$921.48</h1>
+            </div>
+            <div class="image">
+                <img src="logo.svg" alt="image">
+            </div>
+        </div>
+        <div class="card">
+           <h2> Spending - Last 7 days</h2>
+           <div class="graph">
+               <canvas id="bar-chart">
+                   
+               </canvas>
+               
+           </div> 
+           <hr>
+           <p>Total this month</p>
+        <div class="flex">
+            <h1> $478.33</h1>
+            <div class="align-right">
+                <p class="thick">+2.4%</p>
+                <p>from last month</p>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+    </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Babalola Yusuf Olawale</a>.
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
